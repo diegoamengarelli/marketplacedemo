@@ -1,0 +1,27 @@
+/* CategoriaCarousel.css */
+.categoria-carousel-container {
+    max-width: 1000px; /* Ajusta el ancho máximo según tus necesidades */
+    margin: auto;
+    position: relative;
+  }
+  
+  .categoria-carousel {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .categoria-card {
+    flex: 0 0 20%; /* Esto asegura que haya 5 elementos visibles al mismo tiempo */
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .carousel-controls {
+    display: flex;
+    align-items: center;
+  }
+  
+  .carousel-nav {
+    font-size: 2em;
+    margin: 0 10px;
+  }
