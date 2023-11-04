@@ -1,0 +1,27 @@
+.formulario-container {
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-login {
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #63e080;
+    color: white;
+}
+
+.btn-login:hover {
+    background-color: #218838;
+    /* Verde un poco más oscuro */
+}
+
+@media (min-width: 768px) {
+    .formulario-container {
+        max-width: 600px; /* El formulario se expandirá hasta 600px en pantallas más grandes */
+        margin: auto;
+    }
+}
