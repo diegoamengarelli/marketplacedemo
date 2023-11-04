@@ -11,9 +11,9 @@ const NavBar = () => {
         <Container>
           <Navbar.Brand href="#home"> <img src={logo} alt="Logo" /></Navbar.Brand>
           <Nav className="ms-auto">
-            <Nav.Link href="#home">PUBLICAR +</Nav.Link>
-            <Nav.Link href="#features">Login</Nav.Link>
-            <Nav.Link href="#pricing">Signup</Nav.Link>
+            <Nav.Link className='nav-link-custom' href="#home">PUBLICAR +</Nav.Link>
+            <Nav.Link className='nav-link-custom'href="#features">Login</Nav.Link>
+            <Nav.Link className='nav-link-custom'href="#pricing">Signup</Nav.Link>
           </Nav>
         </Container>
       </Navbar>

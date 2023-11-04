@@ -16,15 +16,15 @@ const Busqueda = () => {
     };
 
     return (
-        <Navbar className="border-radius-10">
-            <Row className="w-100">
+        <Navbar className="border-radius-10 mx-3">
+            <Row className="w-100 justify-content-center">
                 <Col sm={3}>
-                    <InputGroup as={Col} sm={3} className="w-100">
+                    <InputGroup as={Col} sm={3} className="w-75">
                         <Button
                             variant="success"
                             onClick={handleBusqueda}
                         >
-                            <i class="bi bi-geo-alt"></i>
+                            <i className="bi bi-geo-alt" />
                         </Button>
                         <FormControl
                             type="text"
@@ -36,7 +36,7 @@ const Busqueda = () => {
                 </Col>
                 <Col sm={3}>
                     <Dropdown as={Col} sm={3} className="w-100">
-                        <Dropdown.Toggle variant="success" className="w-100">
+                        <Dropdown.Toggle variant="success" className="w-100 d-block">
                             {categoria ? categoria : 'Categoría'}
                         </Dropdown.Toggle>
                         <Dropdown.Menu variant="success" className="w-100">
@@ -46,7 +46,7 @@ const Busqueda = () => {
                         </Dropdown.Menu>
                     </Dropdown>
                 </Col>
-                <Col sm={6}>
+                <Col sm={5}>
                     <InputGroup as={Col} className="w-100">
                         <FormControl
                             type="text"
@@ -64,6 +64,7 @@ const Busqueda = () => {
                 </Col>
             </Row>
         </Navbar>
+
     );
 };
 

@@ -2,3 +2,8 @@ img{
     width: 12%;
     float: left;
 }
+
+.nav-link-custom{
+    color: aquamarine;
+    font-weight: bold;
+}
