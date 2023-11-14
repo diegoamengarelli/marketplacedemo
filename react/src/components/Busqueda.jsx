@@ -16,7 +16,7 @@ const Busqueda = () => {
     };
 
     return (
-        <Navbar className="border-radius-10 mx-3">
+        <Navbar className="p-3 mx-4 search-bar-container">
             <Row className="w-100 justify-content-center">
                 <Col sm={3}>
                     <InputGroup as={Col} sm={3} className="w-75">

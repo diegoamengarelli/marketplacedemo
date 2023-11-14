@@ -1,19 +1,20 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import "./CategoriaCarousel.css"
 
 const CategoriaCarousel = () => {
   const categorias = [
-    { nombre: "Tecnología", icono: <i className="bi bi-laptop" style={{ fontSize: 30 }} /> },
-    { nombre: "Ropa", icono: <i className="bi bi-person-workspace" style={{ fontSize: 30 }} /> },
-    { nombre: "Hogar", icono: <i className="bi bi-house-door" style={{ fontSize: 30 }} /> },
-    { nombre: "Deportes", icono: <i className="bi bi-balloon-fill" style={{ fontSize: 30 }} /> },
-    { nombre: "Libros", icono: <i className="bi bi-book" style={{ fontSize: 30 }} /> },
-    { nombre: "Tecnología", icono: <i className="bi bi-laptop" style={{ fontSize: 30 }} /> },
-    { nombre: "Ropa", icono: <i className="bi bi-person-workspace" style={{ fontSize: 30 }} /> },
-    { nombre: "Hogar", icono: <i className="bi bi-house-door" style={{ fontSize: 30 }} /> },
-    { nombre: "Deportes", icono: <i className="bi bi-balloon-fill" style={{ fontSize: 30 }} /> },
-    { nombre: "Libros", icono: <i className="bi bi-book" style={{ fontSize: 30 }} /> },
+    { nombre: "Tecnología", icono: <i className="bi bi-laptop" /> },
+    { nombre: "Ropa", icono: <i className="bi bi-person-workspace" /> },
+    { nombre: "Hogar", icono: <i className="bi bi-house-door" /> },
+    { nombre: "Deportes", icono: <i className="bi bi-balloon-fill" /> },
+    { nombre: "Libros", icono: <i className="bi bi-book" /> },
+    { nombre: "Tecnología", icono: <i className="bi bi-laptop" /> },
+    { nombre: "Ropa", icono: <i className="bi bi-person-workspace" /> },
+    { nombre: "Hogar", icono: <i className="bi bi-house-door" /> },
+    { nombre: "Deportes", icono: <i className="bi bi-balloon-fill" /> },
+    { nombre: "Libros", icono: <i className="bi bi-book" /> },
   ];
 
   const responsive = {

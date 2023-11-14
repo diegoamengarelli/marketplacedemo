@@ -1,34 +1,29 @@
-import { useState } from 'react'
 import './App.css'
-import NavBar from './components/navbar'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import Busqueda from './components/Busqueda';
-import CategoriaCarousel from './components/CategoriaCarrusel';
-import PublicationForm from './components/PublicationForm';
-import LoginForm from './components/LoginForm';
-import RegistroForm from './components/RegistroForm';
-import ProductList from './components/ProductList';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Inicio from "./pages/Inicio";
+import Layout from "./pages/Layout";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import ProductPage from "./pages/ProductPage";
+import Publicacion from './pages/Publicacion';
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <div>
-      <NavBar/>
-      <br/>
-      <Busqueda/>
-      <br/>
-      <CategoriaCarousel/>
-      <br/>
-      <PublicationForm/>
-      <br/>
-      <LoginForm/>
-      <br/>
-      <RegistroForm/>
-      <br/>
-      <ProductList/>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Inicio />} />
+          <Route path="login" element={<Login />} />
+          <Route path="register" element={<Register />} />
+          <Route path="publicar" element={<Publicacion />} />
+          <Route path="producto" element={<ProductPage />} />
+          <Route path="*" element={<Inicio />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
 
   )
 }

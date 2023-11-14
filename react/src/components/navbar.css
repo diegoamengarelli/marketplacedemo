@@ -1,9 +1,23 @@
-img{
+img {
     width: 12%;
     float: left;
 }
 
-.nav-link-custom{
+.nav-link-custom {
+    background-color: white;
     color: aquamarine;
     font-weight: bold;
+    padding-right: 0 !important;
+    position: relative;
+}
+
+.nav-link-button {
+    font-size: 20px !important;
+  }
+
+/* Agrega estilos adicionales para hover si es necesario */
+.nav-link-button:hover {
+    background-color: #eee;
+    color: #333;
+    border-radius: 10px;
 }
