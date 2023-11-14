@@ -14,10 +14,10 @@ const NavBar = () => {
   };
 
   return (
-    <Navbar className='nav-link-custom'>
-      <Container>
-        <Navbar.Brand href="#home"> <img src={logo} alt="Logo" /></Navbar.Brand>
-        <Nav className="mx-2">
+    <Navbar className='nav-link-custom w-100'>
+      <Container className='w-100 px-0 mr-0'>
+        <Navbar.Brand href="/" className='mr-auto'> <img src={logo} alt="Logo" /></Navbar.Brand>
+        <Nav className='ml-auto mr-0'>
           <OverlayTrigger overlay={<Tooltip id="favorites-tooltip" className="custom-tooltip">Favoritos</Tooltip>} {...tooltipProps}>
             <Nav.Link href="#" className="nav-link-button">
               <i className="bi bi-heart-fill text-danger"></i>
@@ -31,19 +31,19 @@ const NavBar = () => {
           </OverlayTrigger>
 
           <OverlayTrigger overlay={<Tooltip id="publish-tooltip" className="custom-tooltip">Publicar</Tooltip>} {...tooltipProps}>
-            <Nav.Link href="#" className="nav-link-button" style={{ color: 'black' }}>
+            <Nav.Link href="publicar" className="nav-link-button" style={{ color: 'black' }}>
               + PUBLICAR
             </Nav.Link>
           </OverlayTrigger>
 
           <OverlayTrigger overlay={<Tooltip id="login-tooltip" className="custom-tooltip">Ingresar con cuenta</Tooltip>} {...tooltipProps}>
-            <Nav.Link href="#" className="nav-link-button">
+            <Nav.Link href="login" className="nav-link-button">
               Ingresar
             </Nav.Link>
           </OverlayTrigger>
 
           <OverlayTrigger overlay={<Tooltip id="signup-tooltip" className="custom-tooltip">Crear cuenta nueva</Tooltip>} {...tooltipProps}>
-            <Nav.Link href="#" className="nav-link-button">
+            <Nav.Link href="register" className="nav-link-button">
               Crear cuenta
             </Nav.Link>
           </OverlayTrigger>
