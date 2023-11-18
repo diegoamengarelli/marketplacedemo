@@ -50,7 +50,7 @@ const Busqueda = () => {
                     <InputGroup as={Col} className="w-100">
                         <FormControl
                             type="text"
-                            placeholder="Buscar"
+                            placeholder="Buscar productos o servicios..."
                             value={busqueda}
                             onChange={(e) => setBusqueda(e.target.value)}
                         />

@@ -19,7 +19,7 @@ const NavBar = () => {
         <Navbar.Brand href="/" className='mr-auto'> <img src={logo} alt="Logo" /></Navbar.Brand>
         <Nav className='ml-auto mr-0'>
           <OverlayTrigger overlay={<Tooltip id="favorites-tooltip" className="custom-tooltip">Favoritos</Tooltip>} {...tooltipProps}>
-            <Nav.Link href="#" className="nav-link-button">
+            <Nav.Link href="favoritos" className="nav-link-button">
               <i className="bi bi-heart-fill text-danger"></i>
             </Nav.Link>
           </OverlayTrigger>
@@ -32,7 +32,7 @@ const NavBar = () => {
 
           <OverlayTrigger overlay={<Tooltip id="publish-tooltip" className="custom-tooltip">Publicar</Tooltip>} {...tooltipProps}>
             <Nav.Link href="publicar" className="nav-link-button" style={{ color: 'black' }}>
-              + PUBLICAR
+              +PUBLICAR
             </Nav.Link>
           </OverlayTrigger>
 
