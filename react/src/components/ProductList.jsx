@@ -1,5 +1,6 @@
 import React from 'react';
 import ProductCard from './ProductCard';
+import { useNavigate } from 'react-router-dom';
 
 const productos = [
   {
@@ -85,6 +86,12 @@ const productos = [
 ];
 
 const ProductList = () => {
+  const navigate = useNavigate();
+
+  const redirigirAProducto = () => {
+    navigate('/producto'); // TODO redirigir al id del producto cuando haya db
+  };
+
   return (
     <div className="d-flex flex-wrap justify-content-between mt-4 p-4">
       <div className="d-flex align-items-center mb-3">
@@ -105,7 +112,7 @@ const ProductList = () => {
             vendedor={producto.vendedor}
             valoracion={producto.valoracion}
             imagen={producto.imagen}
-            onVerDetalles={() => console.log('Ver detalles')}
+            onVerDetalles={redirigirAProducto}
           />
         ))}
       </div>

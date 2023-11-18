@@ -8,6 +8,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import ProductPage from "./pages/ProductPage";
 import Publicacion from './pages/Publicacion';
+import FavoritosPage from './pages/Favoritos';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
           <Route path="register" element={<Register />} />
           <Route path="publicar" element={<Publicacion />} />
           <Route path="producto" element={<ProductPage />} />
+          <Route path="favoritos" element={<FavoritosPage />} />
           <Route path="*" element={<Inicio />} />
         </Route>
       </Routes>
